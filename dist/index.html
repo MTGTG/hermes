@@ -14,20 +14,18 @@
             align-items: center;
             justify-content: center;
             color: white;
+            text-align: center;
         }
         .container {
-            text-align: center;
             padding: 40px;
-            background: rgba(255,255,255,0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+            max-width: 800px;
         }
         h1 { font-size: 2.5em; margin-bottom: 20px; }
-        p { font-size: 1.2em; opacity: 0.9; }
+        p { font-size: 1.2em; opacity: 0.9; line-height: 1.6; }
+        .links { margin-top: 30px; }
         .btn {
             display: inline-block;
-            margin-top: 30px;
+            margin: 10px;
             padding: 15px 30px;
             background: white;
             color: #667eea;
@@ -37,16 +35,43 @@
             transition: transform 0.3s, box-shadow 0.3s;
         }
         .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+        .status {
+            margin-top: 20px;
+            padding: 20px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 10px;
+        }
+        code { 
+            background: rgba(0,0,0,0.3); 
+            padding: 2px 8px; 
+            border-radius: 4px;
+            font-family: monospace;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>⚡ Elecsim Studio Pro</h1>
-        <p>电工电路仿真与工作原理可视化平台 v2026.05.06</p>
-        <p style="margin-top: 20px;">📦 项目已准备就绪！正在部署中...</p>
-        <a href="https://app.netlify.com/drop" class="btn" target="_blank">
-            🚀 点击此处部署到 Netlify
-        </a>
+        <p style="font-size: 1.5em; margin: 20px 0;">电工电路仿真与工作原理可视化平台</p>
+        <p>v2026.05.06 | GitHub Pages 部署中...</p>
+        
+        <div class="status">
+            <p>📦 项目已成功上传到 GitHub 仓库：<br><code>https://github.com/MTGTG/hermes</code></p>
+            <p style="margin-top: 15px;">✅ 下一步：</p>
+            <ol style="text-align: left; margin: 15px 40px;">
+                <li>访问 <a href="https://github.com/MTGTG/hermes/settings/pages" style="color:#fff;" target="_blank">GitHub Pages 设置</a></li>
+                <li>在 "Build and deployment" 中选择：</li>
+                <li><b>Source:</b> Deploy from a branch</li>
+                <li><b>Branch:</b> main / folder (root)</li>
+                <li>点击 <b>Save</b> 保存</li>
+            </ol>
+            <p style="margin-top: 15px;">💡 完成后您的应用将在：<br><code>https://mtgtg.github.io/hermes/</code></p>
+        </div>
+        
+        <div class="links">
+            <a href="https://github.com/MTGTG/hermes/tree/main/dist" class="btn" target="_blank">📂 查看源码</a>
+            <a href="https://github.com/MTGTG/hermes/settings/pages" class="btn" target="_blank">⚙️ 配置 Pages</a>
+        </div>
     </div>
 </body>
 </html>
