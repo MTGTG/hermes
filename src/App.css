@@ -1,0 +1,48 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body, #root {
+  height: 100vh; overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  background: #0F0F14; color: white;
+}
+
+.app-container {
+  display: grid;
+  grid-template-columns: 280px 1fr 320px;
+  grid-template-rows: 56px 1fr 48px;
+  height: 100vh;
+}
+
+/* Toolbar spans full width */
+.toolbar {
+  grid-column: 1 / -1;
+}
+
+/* Component panel */
+.component-panel {
+  grid-row: 2;
+}
+
+/* Canvas area */
+.canvas-area {
+  grid-row: 2;
+}
+
+/* Properties panel */
+.properties-panel {
+  grid-row: 2;
+}
+
+/* Status bar spans full width */
+.status-bar {
+  grid-column: 1 / -1;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #2D2D3D; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #3D3D4D; }
